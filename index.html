@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Priorify - Organise & Prioritize</title>
+  <link rel="stylesheet" href="dsgn.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">✔</div>
+    <h1>Priorify</h1>
+    <p class="subtitle">Organize and prioritize your tasks efficiently</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <p>Total Tasks</p>
+      <h2 id="totalTasks">0</h2>
+    </div>
+    <div class="card">
+      <p>Active</p>
+      <h2 id="activeTasks">0</h2>
+    </div>
+    <div class="card">
+      <p>Completed</p>
+      <h2 id="completedTasks">0</h2>
+    </div>
+    <div class="card urgent">
+      <p>Urgent</p>
+      <h2 id="urgentTasks">0</h2>
+    </div>
+  </section>
+
+  <section class="box">
+    <h3>Add New Task</h3>
+
+    <label>Task Title *</label>
+    <input id="taskTitle" type="text" placeholder="Enter task title">
+
+  
+    <label>Description</label>
+    <textarea id="taskDescription" placeholder="Add task details (optional)"></textarea>
+  
+    <div class="row">
+      <div>
+        <label>Priority</label>
+        <select id="taskPriority">
+           <option value="Low">Low</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="High">High</option>
+        </select>
+      </div>
+
+
+      <div>
+        <label>Due Date</label>
+        <input id="taskDueDate" type="date">
+      </div>
+    </div>
+
+    <button id = "addTaskBtn" type = "button"> + Add Task</button>
+  </section>
+ 
+
+  <section class="box">
+    <h3>Tasks (0)</h3>
+    <div id="taskList"></div>
+  </section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
