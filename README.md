@@ -39,9 +39,9 @@ https://uzmaa29.github.io/Priorify/
 
 ### ✦ Current Limitations:
 
-Tasks reset when the page is refreshed
-No data storage
-No user login
+Tasks reset when the page is refreshed </br>
+No data storage </br>
+No user login </br>
 
 ### ✦ Future Improvements: </br>
 
